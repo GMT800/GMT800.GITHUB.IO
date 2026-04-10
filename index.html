@@ -5,10 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GMT800</title>
 
+<!-- الخط -->
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+
 <style>
 body {
     margin: 0;
-    font-family: "Tahoma", Arial;
+    font-family: 'Cairo', Tahoma, Arial;
     background: linear-gradient(to bottom, #111, #222);
     color: white;
     text-align: center;
@@ -23,53 +26,68 @@ header {
     font-size: 22px;
     font-weight: bold;
     letter-spacing: 1px;
-
     background: linear-gradient(90deg, #d60000 0%, #d4af37 100%);
-    position: relative; /* مهم */
+    position: relative;
 }
 
-/* نص اليسار */
 header .left {
     color: white;
     text-shadow: 0 0 10px rgba(0,0,0,0.7);
 }
 
-/* نص اليمين */
 header .right {
     color: white;
     text-shadow: 0 0 8px rgba(255,255,255,0.3);
 }
 
-/* GMT800 في النص */
 header .center {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-
     background: #111;
     color: white;
     padding: 6px 15px;
     border-radius: 10px;
-
     font-size: 14px;
     letter-spacing: 2px;
-
     box-shadow: 0 0 10px rgba(0,0,0,0.7);
     border: 1px solid rgba(255,255,255,0.2);
 }
 
-/* القسم الرئيسي */
+/* العنوان فوق */
 .hero {
-    padding: 80px 20px;
+    padding: 30px 20px 10px;
 }
 
 .hero h1 {
-    font-size: 40px;
+    font-size: 38px;
     margin-bottom: 10px;
 }
 
 .hero p {
     color: #ccc;
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+/* مكان الصورة */
+.hero-image {
+    width: 90%;
+    max-width: 1000px;
+    aspect-ratio: 16/9;
+    margin: 30px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #000; /* مؤقت لين تحط صورة */
+    box-shadow: 0 0 20px rgba(0,0,0,0.6);
+}
+
+/* الصورة نفسها */
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* الكروت */
@@ -77,11 +95,10 @@ header .center {
     display: flex;
     justify-content: center;
     gap: 25px;
-    padding: 50px;
+    padding: 40px;
     flex-wrap: wrap;
 }
 
-/* الكرت */
 .card {
     background: linear-gradient(145deg, #1c1c1c, #2a2a2a);
     padding: 30px;
@@ -97,12 +114,10 @@ header .center {
     background: linear-gradient(145deg, #2a2a2a, #3a3a3a);
 }
 
-/* عنوان الكرت */
 .card h2 {
     margin-bottom: 10px;
 }
 
-/* وصف */
 .card p {
     color: #bbb;
 }
@@ -113,16 +128,24 @@ header .center {
 
 <header>
     <div class="left">CHEVROLET SILVERADO</div>
-
     <div class="center">GMT800</div>
-
     <div class="right">GMC SIERRA</div>
 </header>
 
 <section class="hero">
     <h1>كل ما تحتاج معرفته عن السييرا والسلفرادو</h1>
-    <p>أحجام المكاين - أنواع القيور - أنواع الشاصي - أنواع الدفرنسات - أحجام الحوض - الألوان - المواصفات الداخلية - الأكسسوارات - الفئات</p>
+    <p>
+        أحجام المكاين - أنواع القيور - أنواع الشاصي - أنواع الدفرنسات -
+        أحجام الحوض - الألوان - المواصفات الداخلية - الأكسسوارات - الفئات
+    </p>
 </section>
+
+<!-- مكان الصورة -->
+<div class="hero-image">
+    <!-- حط صورتك هنا -->
+    <!-- مثال: -->
+    <!-- <img src="your-image.jpg"> -->
+</div>
 
 <section class="cards">
 
