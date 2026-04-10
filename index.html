@@ -16,11 +16,28 @@ body {
 
 /* الهيدر */
 header {
-  background: linear-gradient(90deg, #d60000 0%, #d4af37 100%);
-    padding: 20px;
-    font-size: 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    font-size: 22px;
     font-weight: bold;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+
+    /* التدرج */
+    background: linear-gradient(90deg, #d60000 0%, #d4af37 100%);
+}
+
+/* نص اليسار (GMC) */
+header .left {
+    color: white;
+    text-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+/* نص اليمين (Chevrolet) */
+header .right {
+    color: black;
+    text-shadow: 0 0 8px rgba(255,255,255,0.3);
 }
 
 /* القسم الرئيسي */
@@ -77,31 +94,29 @@ header {
 <body>
 
 <header>
-    GMC SIERRA (GMT800) CHEVROLET SILVERADO 
+    <div class="left">GMC SIERRA (GMT800)</div>
+    <div class="right">CHEVROLET SILVERADO</div>
 </header>
 
 <section class="hero">
-    <h1>كل ما تحتاج معرفته عن السييرا والسلفرادو  </h1>
-    <p>أحجام المكاين - أنواع القيور - أنواع الشاصي - أنواع الدفرنسات - أحجام الحوض - الألوان - المواصفات الداخلية - الأكسسوارات - الفئات </p>
+    <h1>كل ما تحتاج معرفته عن السييرا والسلفرادو</h1>
+    <p>أحجام المكاين - أنواع القيور - أنواع الشاصي - أنواع الدفرنسات - أحجام الحوض - الألوان - المواصفات الداخلية - الأكسسوارات - الفئات</p>
 </section>
 
 <section class="cards">
 
-    <!-- يسار -->
     <div class="card">
         <h2>1500 / 2500 / 3500</h2>
         <p>الأحجام</p>
     </div>
 
-    <!-- الوسط -->
     <div class="card">
         <h2>1999 - 2002</h2>
         <p>البداية</p>
     </div>
 
-    <!-- يمين -->
     <div class="card">
-        <h2>2003 - 2007(Classic)</h2>
+        <h2>2003 - 2007 (Classic)</h2>
         <p>الفيس ليفت</p>
     </div>
 
