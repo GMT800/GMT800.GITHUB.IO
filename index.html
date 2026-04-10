@@ -24,20 +24,38 @@ header {
     font-weight: bold;
     letter-spacing: 1px;
 
-    /* التدرج */
     background: linear-gradient(90deg, #d60000 0%, #d4af37 100%);
+    position: relative; /* مهم */
 }
 
-/* نص اليسار (Chevrolet) */
+/* نص اليسار */
 header .left {
     color: white;
     text-shadow: 0 0 10px rgba(0,0,0,0.7);
 }
 
-/* نص اليمين (GMC) */
+/* نص اليمين */
 header .right {
     color: white;
     text-shadow: 0 0 8px rgba(255,255,255,0.3);
+}
+
+/* GMT800 في النص */
+header .center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background: #111;
+    color: #d4af37;
+    padding: 6px 15px;
+    border-radius: 10px;
+
+    font-size: 14px;
+    letter-spacing: 2px;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    border: 1px solid rgba(255,255,255,0.2);
 }
 
 /* القسم الرئيسي */
@@ -95,6 +113,9 @@ header .right {
 
 <header>
     <div class="left">CHEVROLET SILVERADO</div>
+
+    <div class="center">GMT800</div>
+
     <div class="right">GMC SIERRA</div>
 </header>
 
